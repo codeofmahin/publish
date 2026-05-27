@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সাধারণ ওয়েব পেইজ</title>
+    <style>
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #printable, #printable * {
+                visibility: visible;
+            }
+            #printable {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 210mm;
+                min-height: 297mm;
+            }
+            /* 🔽 প্রিন্টে বাটন লুকাবে */
+            #printable button {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #D4D4D4; margin: 0;">
+
+    <!-- 1st pixed tab -->
+    <div style="position: fixed; top: 0; left: 0; width: 100%; background-color: #333; color: white; text-align: center; padding: 10px 0; z-index: 1000;">
+        <h3 style="margin: 0;">ওয়েব পেইজ শিরোনাম</h3>
+    </div>
+
+    <!-- second pixed tab-->
+    <div style="position: fixed; top: 50px; left: 0; width: 100%; background-color: #555; color: white; 
+    text-align: center; padding: 8px 0; z-index: 999; display: flex; justify-content: center; gap: 20px;">
+        <a href="#option1" style="color: white; text-decoration: none;">অপশন ১</a>
+        <a href="#option2" style="color: white; text-decoration: none;">অপশন ২</a>
+        <a href="#option3" style="color: white; text-decoration: none;">অপশন ৩</a>
+        <a href="#option4" style="color: white; text-decoration: none;">অপশন ৪</a>
+        <a href="#option5" style="color: white; text-decoration: none;">অপশন ৫</a>
+    </div>
+
+    <div style="display: flex; margin-top: 100px; height: calc(100vh - 100px); padding-left: 10px; padding-right: 10px;">
+
+        <!-- বাম পাশের মেনু (শুধু ৫টা অপশন) -->
+        <div style="width: 20%; overflow-y: auto; padding: 10px; background-color: #B0C4DE; margin-right: 10px;">
+            <h3>মেনু</h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#post">post</a></li>
+                <li><a href="#surface database">Surface Database</a></li>
+                <li><a href="#Database login">Database Login</a></li>
+
+                <li><a href="#option1">অপশন ১</a></li>
+                <li><a href="#option2">অপশন ২</a></li>
+                <li><a href="#option3">অপশন ৩</a></li>
+                <li><a href="#option4">অপশন ৪</a></li>
+                <li><a href="#option5">অপশন ৫</a></li>
+
+                <li><a href="#option1">অপশন ১</a></li>
+                <li><a href="#option2">অপশন ২</a></li>
+                <li><a href="#option3">অপশন ৩</a></li>
+                <li><a href="#option4">অপশন ৪</a></li>
+                <li><a href="#option5">অপশন ৫</a></li>
+
+                <li><a href="#contact">কন্ট্যাক্ট</a></li>
+                <li><a href="#gallery">গ্যালারি</a></li>
+                <li><a href="#option1">অপশন ১</a></li>
+                <li><a href="#option2">অপশন ২</a></li>
+                <li><a href="#option3">অপশন ৩</a></li>
+                <li><a href="#option4">অপশন ৪</a></li>
+                <li><a href="#option5">অপশন ৫</a></li>
+
+                <li><a href="#contact">কন্ট্যাক্ট</a></li>
+                <li><a href="#gallery">গ্যালারি</a></li>
+                <li><a href="#option1">অপশন ১</a></li>
+                <li><a href="#option2">অপশন ২</a></li>
+                <li><a href="#option3">অপশন ৩</a></li>
+                <li><a href="#option4">অপশন ৪</a></li>
+                <li><a href="#option5">অপশন ৫</a></li>
+            </ul>
+        </div>
+
+        <!-- ডান পাশের আর্টিকেল (A4 সাইজ, প্রিন্টেবল অংশ) -->
+        <div style="flex: 1; overflow-y: auto; display: flex; justify-content: center; padding-left: 10px; padding-right: 10px;">
+            <div id="printable" style="width: 210mm; min-height: 297mm; background-color: white; padding: 20mm; box-sizing: border-box;">
+
+               
+                <p>
+📌Save Your time with Short Cuts
+Important Shortcuts Keys For Computer
+
+CTRL+A. . . . . . . . . . . . . . . . . Select All CTRL+C. . . . . . . . . . . . . . . . . Copy
+CTRL+X. . . . . . . . . . . . . . . . . Cut
+CTRL+V. . . . . . . . . . . . . . . . . Paste
+CTRL+Z. . . . . . . . . . . . . . . . . Undo
+CTRL+B. . . . . . . . . . . . . . . . . Bold
+CTRL+U. . . . . . . . . . . . . . . . . Underline
+CTRL+I . . . . . . . . . . . . . . . . . Italic
+F1 . . . . . . . . . . . . . . . . . . . . . . Help
+F2 . . . . . . . . . . . . . . . . . . . . . Rename selected object
+F3 . . . . . . . . . . . . . . . . . . . . . Find all files
+F4 . . . . . . . . . . . . . . . . . . . . . Opens file list drop-down in dialogs
+F5 . . . . . . . . . . . . . . . . . . . . . Refresh current window
+F6 . . . . . . . . . . . . . . . . . . . . . Shifts focus in Windows Explorer
+F10 . . . . . . . . . . . . . . . . . . . . Activates menu bar options
+ALT+TAB . . . . . . . . . . . . . . . . Cycles between open applications
+ALT+F4 . . . . . . . . . . . . . . . . . Quit program, close current window
+ALT+F6 . . . . . . . . . . . . . . . . . Switch between current program windows
+ALT+ENTER. . . . . . . . . . . . . . Opens properties dialog
+ALT+SPACE . . . . . . . . . . . . . . System menu for current window
+ALT+¢ . . . . . . . . . . . . . . . . . . opens drop-down lists in dialog boxes
+BACKSPACE . . . . . . . . . . . . . Switch to parent folder
+CTRL+ESC . . . . . . . . . . . . . . Opens Start menu
+CTRL+ALT+DEL . . . . . . . . . . Opens task manager, reboots the computer
+CTRL+TAB . . . . . . . . . . . . . . Move through property tabs
+CTRL+SHIFT+DRAG . . . . . . . Create shortcut (also right-click, drag)
+CTRL+DRAG . . . . . . . . . . . . . Copy File
+ESC . . . . . . . . . . . . . . . . . . . Cancel last function
+SHIFT . . . . . . . . . . . . . . . . . . Press/hold SHIFT, insert CD-ROM to bypass auto-play
+SHIFT+DRAG . . . . . . . . . . . . Move file
+SHIFT+F10. . . . . . . . . . . . . . . Opens context menu (same as right-click)
+SHIFT+DELETE . . . . . . . . . . . Full wipe delete (bypasses Recycle Bin)
+ALT+underlined letter . . . . Opens the corresponding menu
+PC Keyboard Shortcuts
+Document Cursor Controls
+HOME . . . . . . . . . . . . . . to beginning of line or far left of field or screen
+END . . . . . . . . . . . . . . . . to end of line, or far right of field or screen
+CTRL+HOME . . . . . . . . to the top
+CTRL+END . . . . . . . . . . to the bottom
+PAGE UP . . . . . . . . . . . . moves document or dialog box up one page
+PAGE DOWN . . . . . . . . moves document or dialog down one page
+ARROW KEYS . . . . . . . move focus in documents, dialogs, etc.
+CTRL+ > . . . . . . . . . . . . next word
+CTRL+SHIFT+ > . . . . . . selects word
+Windows Explorer Tree Control
+Numeric Keypad * . . . Expand all under current selection
+Numeric Keypad + . . . Expands current selection
+Numeric Keypad – . . . Collapses current selection
+¦ . . . . . . . . . . . . . . . . . . . Expand current selection or go to first child
+ ‰ . . . . . . . . . . . . . . . . . . Collapse current selection or go to parent
+ Special Characters
+ ‘ Opening single quote . . . alt 0145
+ ’ Closing single quote . . . . alt 0146
+ “ Opening double quote . . . alt 0147
+ “ Closing double quote. . . . alt 0148
+ – En dash. . . . . . . . . . . . . . . alt 0150
+ — Em dash . . . . . . . . . . . . . . alt 0151
+ … Ellipsis. . . . . . . . . . . . . . . . alt 0133
+ • Bullet . . . . . . . . . . . . . . . . alt 0149
+ • ®️ Registration Mark . . . . . . . alt 0174
+ • ©️ Copyright . . . . . . . . . . . . . alt 0169
+ • ™️ Trademark . . . . . . . . . . . . alt 0153
+ • ° Degree symbol. . . . . . . . . alt 0176
+ • ¢ Cent sign . . . . . . . . . . . . . alt 0162
+ • 1⁄4 . . . . . . . . . . . . . . . . . . . . . alt 0188
+ • 1⁄2 . . . . . . . . . . . . . . . . . . . . . alt 0189
+ • 3⁄4 . . . . . . . . . . . . . . . . . . . . . alt 0190
+ • PC Keyboard Shortcuts
+ • Creating unique images in a uniform world! Creating unique images in a uniform world!
+ • é . . . . . . . . . . . . . . . alt 0233
+ • É . . . . . . . . . . . . . . . alt 0201
+ • ñ . . . . . . . . . . . . . . . alt 0241
+ • ÷ . . . . . . . . . . . . . . . alt 0247
+ • File menu options in current program
+ • Alt + E Edit options in current program
+ • F1 Universal help (for all programs)
+ • Ctrl + A Select all text
+ • Ctrl + X Cut selected item
+ • Shift + Del Cut selected item
+ • Ctrl + C Copy selected item
+ • Ctrl + Ins Copy selected item
+ • Ctrl + V Paste
+ • Shift + Ins Paste
+ • Home Go to beginning of current line
+ • Ctrl + Home Go to beginning of document
+ • End Go to end of current line
+ • Ctrl + End Go to end of document
+ • Shift + Home Highlight from current position to beginning of line
+ • Shift + End Highlight from current position to end of line
+ • Ctrl + f Move one word to the left at a time
+ • Ctrl + g Move one word to the right at a time
+ • MICROSOFT®️ WINDOWS® SHORTCUT KEYS
+ • Alt + Tab Switch between open applications
+ • Alt +
+ • Shift + Tab
+ • Switch backwards between open
+ • applications
+ • Alt + Print
+ • Screen
+ • Create screen shot for current program
+ • Ctrl + Alt + Del Reboot/Windows®️ task manager
+ • Ctrl + Esc Bring up start menu
+ • Alt + Esc Switch between applications on taskbar
+ • F2 Rename selected icon
+ • F3 Start find from desktop
+ • F4 Open the drive selection when browsing
+ • F5 Refresh contents
+ • Alt + F4 Close current open program
+ • Ctrl + F4 Close window in program
+ • Ctrl + Plus
+ • Key
+ • Automatically adjust widths of all columns
+ • in Windows Explorer
+ • Alt + Enter Open properties window of selected icon
+ • or program
+ • Shift + F10 Simulate right-click on selected item
+ • Shift + Del Delete programs/files permanently
+ • Holding Shift
+ • During Bootup
+ • Boot safe mode or bypass system files
+ • Holding Shift
+ • During Bootup
+ • When putting in an audio CD, will prevent
+ • CD Player from playing
+ • WINKEY SHORTCUTS
+ • WINKEY + D Bring desktop to the top of other windows
+ • WINKEY + M Minimize all windows
+ • WINKEY +
+ • SHIFT + M
+ • Undo the minimize done by WINKEY + M
+ • and WINKEY + D
+ • WINKEY + E Open Microsoft Explorer
+ • WINKEY + Tab Cycle through open programs on taskbar
+ • WINKEY + F Display the Windows®️ Search/Find feature
+ • WINKEY +
+ • CTRL + F
+ • Display the search for computers window
+ • WINKEY + F1 Display the Microsoft®️ Windows®️ help
+ • WINKEY + R Open the run window
+ • WINKEY +
+ • Pause /Break
+ • Open the system properties window
+ • WINKEY + U Open utility manager
+ • WINKEY + L Lock the computer (Windows XP®️ & later)
+ • OUTLOOK®️ SHORTCUT KEYS
+ • Alt + S Send the email
+ • Ctrl + C Copy selected text
+ • Ctrl + X Cut selected text
+ • Ctrl + P Open print dialog box
+ • Ctrl + K Complete name/email typed in address bar
+ • Ctrl + B Bold highlighted selection
+ • Ctrl + I Italicize highlighted selection
+ • Ctrl + U Underline highlighted selection
+ • Ctrl + R Reply to an email
+ • Ctrl + F Forward an email
+ • Ctrl + N Create a new email
+ • Ctrl + Shift + A Create a new appointment to your calendar
+ • Ctrl + Shift + O Open the outbox
+ • Ctrl + Shift + I Open the inbox
+ • Ctrl + Shift + K Add a new task
+ • Ctrl + Shift + C Create a new contact
+ • Ctrl + Shift+ J Create a new journal entry
+ • WORD®️ SHORTCUT KEYS
+ • Ctrl + A Select all contents of the page
+ • Ctrl + B Bold highlighted selection
+ • Ctrl + C Copy selected text
+ • Ctrl + X Cut selected text
+ • Ctrl + N Open new/blank document
+ • Ctrl + O Open options
+ • Ctrl + P Open the print window
+ • Ctrl + F Open find box
+ • Ctrl + I Italicize highlighted selection
+ • Ctrl + K Insert link
+ • Ctrl + U Underline highlighted selection
+ • Ctrl + V Paste
+ • Ctrl + Y Redo the last action performed
+ • Ctrl + Z Undo last action
+ • Ctrl + G Find and replace options
+ • Ctrl + H Find and replace options
+ • Ctrl + J Justify paragraph alignment
+ • Ctrl + L Align selected text or line to the left
+ • Ctrl + Q Align selected paragraph to the left
+ • Ctrl + E Align selected
+_
+
+কম্পিউটারের জন্য গুরুত্বপূর্ণ শর্টকাট কী
+
+সিটিআরএল+এ. . . . . . . . . . . . . . . . . সমস্ত সিটিআরএল+সি নির্বাচন করুন. . . . . . . . . . . . . . . . . কপি করুন
+সিটিআরএল+এক্স. . . . . . . . . . . . . . . . . কাট
+সিটিআরএল+ভি. . . . . . . . . . . . . . . . . পেস্ট করুন
+সিটিআরএল+জেড. . . . . . . . . . . . . . . . . পূর্বসূরি
+সিটিআরএল+বি. . . . . . . . . . . . . . . . . বোল্ড
+সিটিআরএল+ইউ. . . . . . . . . . . . . . . . . আন্ডারলাইন
+সিটিআরএল+আই . . . . . . . . . . . . . . . . . ইটালিক
+এফ১ . . . . . . . . . . . . . . . . . . . . . . সাহায্য
+এফ২ . . . . . . . . . . . . . . . . . . . . . নির্বাচিত বস্তুর পুনঃনামকরন করুন
+F3 . . . . . . . . . . . . . . . . . . . . . সব ফাইল খুঁজুন
+এফ৪ . . . . . . . . . . . . . . . . . . . . . ডায়ালগগুলিতে ড্রপ-ডাউন ফাইল তালিকা খোলে
+এফ৫ . . . . . . . . . . . . . . . . . . . . . বর্তমান উইন্ডো সতেজ করুন
+F6 . . . . . . . . . . . . . . . . . . . . . উইন্ডোজ এক্সপ্লোরার এ শিফট ফোকাস
+F10 . . . . . . . . . . . . . . . . . . . . মেনু বার অপশন সক্রিয় করে
+ALT+TAB . . . . . . . . . . . . . . . . খোলা অ্যাপ্লিকেশনের মধ্যে সাইকেল
+ALT+F4 . . . . . . . . . . . . . . . . . প্রোগ্রাম বন্ধ করুন, বর্তমান উইন্ডো বন্ধ করুন
+ALT+F6 . . . . . . . . . . . . . . . . . বর্তমান প্রোগ্রাম উইন্ডোর মধ্যে পরিবর্তন করুন
+ALT+ENTER. . . . . . . . . . . . . . প্রোপার্টি ডায়ালগ খোলে
+ALT+স্পেস . . . . . . . . . . . . . . বর্তমান উইন্ডোর জন্য সিস্টেম মেনু
+ALT+ ¢ . . . . . . . . . . . . . . . . . . ডায়ালগ বাক্সে ড্রপ-ডাউন তালিকা খুলুন
+ব্যাকস্পেস . . . . . . . . . . . . . প্যারেন্ট ফোল্ডারে পরিবর্তন করুন
+সিটিআরএল+ইএসসি . . . . . . . . . . . . . . স্টার্ট মেনু খোলে
+সিটিআরএল+এলটি+ডেল . . . . . . . . . . টাস্ক ম্যানেজার খুলুন, কম্পিউটার রিবুট করুন
+সিটিআরএল+ট্যাব . . . . . . . . . . . . . . সম্পত্তি ট্যাবের মাধ্যমে সরান
+সিটিআরএল+শিফট+ড্র্যাগ . . . . . . . শর্টকাট তৈরি করুন ( এছাড়াও ডান-ক্লিক, টেনে আনুন)
+সিটিআরএল+ড্র্যাগ . . . . . . . . . . . . . ফাইল কপি করুন
+ইএসসি . . . . . . . . . . . . . . . . . . . শেষ ফাংশন বাতিল করুন
+শিফট . . . . . . . . . . . . . . . . . . শিফট টিপুন/ ধরে রাখুন, অটো-প্লে বাইপাস করতে সিডি-রম লিখুন
+শিফট+ড্র্যাগ . . . . . . . . . . . . ফাইল সরাও
+শিফট+এফ১০. . . . . . . . . . . . . . . প্রসঙ্গ মেনু খোলে (ডান ক্লিকের মত একই)
+শিফট+ডিলেট . . . . . . . . . . . সম্পূর্ণ মুছে ফেলা (বাইপাস রিসাইকেল বিন)
+ALT+আন্ডারলাইন করা চিঠি . . . . সংশ্লিষ্ট মেনু খুলুন
+পিসি কীবোর্ড শর্টকাট
+ডকুমেন্ট কার্সর নিয়ন্ত্রণ
+হোম . . . . . . . . . . . . . . লাইনের শুরুতে বা ফিল্ড বা স্ক্রিনের অনেক বামে
+শেষ . . . . . . . . . . . . . . . . লাইনের শেষ পর্যন্ত, অথবা ফিল্ড বা স্ক্রিনের অনেক ডানে
+সিটিআরএল+হোম . . . . . . . . উপরের দিকে
+সিটিআরএল+এন্ড . . . . . . . . . . একদম নীচে
+পেজ আপ . . . . . . . . . . . . ডকুমেন্ট বা ডায়ালগ বক্স এক পৃষ্ঠায় সরানো হয়েছে
+পেজ ডাউন . . . . . . . . ডকুমেন্ট বা ডায়ালগ এক পৃষ্ঠার নিচে সরানো হয়েছে
+অ্যারো কিস . . . . . . . নথি, সংলাপ ইত্যাদিতে ফোকাস সরানো।
+সিটিআরএল+ > . . . . . . . . . . . . পরবর্তী শব্দ
+সিটিআরএল + শিফট + > . . . . . . শব্দ নির্বাচন করুন
+উইন্ডোজ এক্সপ্লোরার গাছ নিয়ন্ত্রণ
+সংখ্যাসূচক কিপ্যাড * . . . বর্তমান নির্বাচনের অধীনে সব প্রসারিত করুন
+সংখ্যাসূচক কিপ্যাড + . . . বর্তমান নির্বাচন প্রসারিত করে
+সংখ্যাসূচক কিপ্যাড - . . . বর্তমান নির্বাচন কোলাপ করে
+¦ . . . . . . . . . . . . . . . . . . . বর্তমান নির্বাচন প্রসারিত করুন অথবা প্রথম শিশুর কাছে যান
+‰ . . . . . . . . . . . . . . . . . . বর্তমান নির্বাচন বাতিল করুন অথবা পিতামাতার কাছে যান
+বিশেষ চরিত্র
+' একক উদ্ধৃতি খুলছি . . . অলট ০১৪৫
+` একক উদ্ধৃতি বন্ধ করছি . . . . অল্ট ০১৪৬
+"দ্বিগুন উদ্ধৃতি খোলা হচ্ছে . . . অলট ০১৪৭
+" ডাবল কোট বন্ধ করছি. . . . অল্ট ০১৪৮
+– এন ড্যাশ. . . . . . . . . . . . . . . অলট ০১৫০
+— এম ড্যাশ . . . . . . . . . . . . . . অল্ট ০১৫১
+... এলিপসিস. . . . . . . . . . . . . . . . আলট ০১৩৩
+• বুলেট . . . . . . . . . . . . . . . . অলট ০১৪৯
+• ®️ রেজিস্ট্রেশন মার্ক . . . . . . . আলট 0174
+• ©️ কপিরাইট . . . . . . . . . . . . . আলট ০১৬৯
+• TM️ ট্রেডমার্ক . . . . . . . . . . . . অলট ০১৫৩
+• ° ডিগ্রী চিহ্ন. . . . . . . . . আলট 0176
+• ¢ সেন্ট সাইন . . . . . . . . . . . . . আলট ০১৬২
+• ১ ⁄৪ . . . . . . . . . . . . . . . . . . . . . আলট 0188
+• ১ ⁄২ . . . . . . . . . . . . . . . . . . . . . আলট 0189
+• ৩ ⁄৪ . . . . . . . . . . . . . . . . . . . . . অল্ট 0190
+• পিসি কীবোর্ড শর্টকাট
+• একটি অভিন্ন বিশ্বে অনন্য ছবি তৈরি করছি! একটি অভিন্ন বিশ্বে অনন্য ছবি তৈরি করছি!
+• é . . . . . . . . . . . . . . . অলট ০২৩৩
+• É . . . . . . . . . . . . . . . অলট ০২০১
+• এন . . . . . . . . . . . . . . . অল্ট ০২৪১
+• ÷ . . . . . . . . . . . . . . . অলট ০২৪৭
+• বর্তমান প্রোগ্রামে ফাইল মেনু বিকল্প
+• বর্তমান প্রোগ্রামে Alt + E সম্পাদনা বিকল্পসমূহ
+• এফ১ সার্বজনীন সাহায্য (সকল প্রোগ্রামের জন্য)
+• Ctrl + A সব টেক্সট নির্বাচন করুন
+• Ctrl + X কাট বাছাই করা আইটেম
+• শিফট + ডেল কাট বাছাই করা আইটেম
+• Ctrl + C নির্বাচিত আইটেম কপি করুন
+• Ctrl + Ins বাছাই করা আইটেম কপি করুন
+• সিটিআরএল + ভি পেস্ট
+• শিফট + ইন পেস্ট
+• হোম বর্তমান লাইনের শুরুতে যান
+• সিটিআরএল + হোম ডকুমেন্টের শুরুতে যান
+• শেষ বর্তমান লাইনের শেষে যান
+• Ctrl + শেষ ডকুমেন্টের শেষে যান
+• শিফট + হোম হাইলাইট বর্তমান অবস্থান থেকে লাইনের শুরু পর্যন্ত
+• শিফট + এন্ড হাইলাইট বর্তমান অবস্থান থেকে লাইনের শেষ পর্যন্ত
+• Ctrl + f একবারে একটি শব্দ বাম দিকে সরান
+• Ctrl + G একবারে একটি শব্দ ডানে সরানো
+• মাইক্রোসফট®️ উইন্ডোস® শর্টকাট কিস
+• খোলা অ্যাপ্লিকেশনের মধ্যে Alt + ট্যাব সুইচ
+• অল্ট +
+• শিফট + ট্যাব
+• খোলা মধ্যে পিছনে পরিবর্তন করুন
+• অ্যাপ্লিকেশন
+• অল্ট + প্রিন্ট
+• স্ক্রিন
+• বর্তমান প্রোগ্রামের জন্য স্ক্রিন শট তৈরি করুন
+• Ctrl + Alt + Del Reboot/Windows®️ টাস্ক ম্যানেজার
+• Ctrl + Esc স্টার্ট মেনু আনুন
+টাস্কবারে অ্যাপ্লিকেশনগুলির মধ্যে Alt + Esc সুইচ
+• F2 নির্বাচিত আইকনটির নাম পরিবর্তন করুন
+• ডেস্কটপ থেকে F3 শুরু খোঁজা
+• F4 ব্রাউজিং করার সময় ড্রাইভ নির্বাচন খুলুন
+• F5 বিষয়বস্তু সতেজ করুন
+• Alt + F4 বর্তমান খোলা প্রোগ্রাম বন্ধ করুন
+• Ctrl + F4 প্রোগ্রামে উইন্ডো বন্ধ করুন
+• সিটিআরএল + প্লাস
+• চাবি
+• স্বয়ংক্রিয়ভাবে সব কলামের প্রস্থ সমন্বয় করুন
+• উইন্ডোজ এক্সপ্লোরার এ
+• Alt + নির্বাচিত আইকন খুলুন প্রোপার্টি উইন্ডোতে
+• অথবা প্রোগ্রাম
+• শিফট + F10 সিমুলেট নির্বাচিত আইটেম উপর ডান ক্লিক করুন
+• শিফট + ডেল প্রোগ্রাম/ফাইল স্থায়ীভাবে মুছে ফেলুন
+• হোল্ডিং শিফট
+• বুটআপের সময়
+• নিরাপদ মোড বা বাইপাস সিস্টেম ফাইল বুট করুন
+• হোল্ডিং শিফট
+• বুটআপের সময়
+• যখন একটি অডিও সিডি রাখবেন, তা প্রতিরোধ করবে
+• সিডি প্লেয়ার খেলা থেকে
+• উইঙ্কি শর্টস
+• উইঙ্কি + ডি ডেস্কটপকে অন্যান্য উইন্ডোর শীর্ষে আনুন
+• উইঙ্কি + এম সব উইন্ডোজ মিনিমাইজ করুন
+• উইঙ্কি +
+• শিফট + এম
+• উইঙ্কি + এম দ্বারা করা মিনিমাইজটি আনডো
+• এবং উইঙ্কি + ডি
+• উইঙ্কি + ই ওপেন মাইক্রোসফট এক্সপ্লোরার
+টাস্কবারে ওপেন প্রোগ্রামের মাধ্যমে উইঙ্কি + ট্যাব সাইকেল
+• উইঙ্কি + এফ উইন্ডোজ প্রদর্শন করুন®️ অনুসন্ধান/খুঁজুন বৈশিষ্ট্য
+• উইঙ্কি +
+• সিটিআরএল + এফ
+• কম্পিউটার উইন্ডোর জন্য অনুসন্ধান প্রদর্শন করুন
+• উইঙ্কি + এফ১ মাইক্রোসফট®️ উইন্ডোজ®️ সাহায্য প্রদর্শন করুন
+• উইঙ্কি + আর রান উইন্ডো খুলুন
+• উইঙ্কি +
+• বিরতি / বিরতি
+• সিস্টেমের বৈশিষ্ট্য উইন্ডো খুলুন
+• উইঙ্কি + ইউটিলিটি ম্যানেজার
+• উইঙ্কি + এল কম্পিউটার লক করুন (উইন্ডোজ এক্সপি®️ এবং পরে)
+• আউটলুক®️ শর্টকাট কিস
+• Alt + S ইমেইল পাঠান
+• Ctrl + C নির্বাচিত টেক্সট কপি করুন
+• Ctrl + X বাছাই করা টেক্সট কাট
+• Ctrl + P প্রিন্টের ডায়ালগ বক্স খুলুন
+• সিটিআরএল + কে ঠিকানাতে বারে সম্পূর্ণ নাম/ইমেইল টাইপ করা হয়েছে
+• Ctrl + Bold হাইলাইট করা নির্বাচন
+• Ctrl + I হাইলাইট করা নির্বাচন ইটালিকাইজ করুন
+• সিটিআরএল + ইউ আন্ডারলাইন হাইলাইট করা নির্বাচন
+• Ctrl + R একটি ইমেলের উত্তর
+• Ctrl + F একটি ইমেইল ফরোয়ার্ড করুন
+• Ctrl + N একটি নতুন ইমেইল তৈরি করুন
+• সিটিআরএল + শিফট + একটি আপনার ক্যালেন্ডারে একটি নতুন অ্যাপয়েন্টমেন্ট তৈরি করুন
+• সিটিআরএল + শিফট + ও আউটবক্স খুলুন
+• সিটিআরএল + শিফট + আমি ইনবক্স খুলুন
+• Ctrl + Shift + K একটি নতুন কাজ যোগ করুন
+• সিটিআরএল + শিফট + সি একটি নতুন পরিচিতি তৈরি করুন
+• সিটিআরএল + শিফট + জে একটি নতুন জার্নাল এন্ট্রি তৈরি করুন
+• শব্দ®️ শর্টকাট কিস
+• Ctrl + A পৃষ্ঠার সমস্ত বিষয়বস্তু নির্বাচন করুন
+• Ctrl + Bold হাইলাইট করা নির্বাচন
+• Ctrl + C নির্বাচিত টেক্সট কপি করুন
+• Ctrl + X বাছাই করা টেক্সট কাট
+• Ctrl + N নতুন/ খালি নথি খুলুন
+• Ctrl + O ওপেন অপশন
+• Ctrl + P প্রিন্ট উইন্ডো খুলুন
+• Ctrl + F খোলো খুঁজে বের করার বাক্স
+• Ctrl + I হাইলাইট করা নির্বাচন ইটালিকাইজ করুন
+• Ctrl + K লিঙ্ক সন্নিবেশ করুন
+• সিটিআরএল + ইউ আন্ডারলাইন হাইলাইট করা নির্বাচন
+• সিটিআরএল + ভি পেস্ট
+• Ctrl + Y শেষ ক্রিয়াটি আবার করা হয়েছে
+• Ctrl + Z শেষ অ্যাকশন আনডো
+• Ctrl + G বিকল্পগুলি খুঁজে বের করুন এবং প্রতিস্থাপন করুন
+• সিটিআরএল + এইচ বিকল্প খুঁজে বের করুন এবং প্রতিস্থাপন করুন
+• সিটিআরএল + জে জাস্টিফাই প্যারাগ্রাফ শ্রেণীবিন্যাস
+• Ctrl + L নির্বাচিত টেক্সট বা লাইন বাঁ দিকে সারিবদ্ধ করুন
+• Ctrl + Q নির্বাচিত প্যারাগ্রাফ বাম দিকে সারিবদ্ধ করুন
+• সিটিআরএল + ই এলাইন বাছাই করা হয়েছে
+
+
+
+
+Ctrl + A - Select All
+Ctrl + B - Bold
+Ctrl + C - Copy
+Ctrl + D - Fill
+Ctrl + F - Find
+Ctrl + G - Find next instance of text
+Ctrl + H - Replace
+Ctrl + I - Italic
+Ctrl + K - Insert a hyperlink
+Ctrl + N - New workbook
+Ctrl + O - Open
+Ctrl + P - Print
+Ctrl + R - Nothing right
+Ctrl + S - Save
+Ctrl + U - Underlined
+Ctrl + V - Paste
+Ctrl W - Close
+Ctrl + X - Cut
+Ctrl + Y - Repeat
+Ctrl + Z - Cancel
+F1 - Help
+F2 - Edition
+F3 - Paste the name
+F4 - Repeat the last action
+F5 - Goto
+F6 - Next Pane
+F7 - Spell Check
+F8 - Extension of the mode
+F9 - Recalculate all workbooks
+F10 - Activate Menubar
+F11 - New graph
+F12 - Save As
+Shift + F1 - What is it?
+Shift + F2 - Edit cell comment
+Shift + F3 - Paste the function into the formula
+Shift + F4 - Search Next
+Shift + F5 - Find
+Shift + F6 - Previous Panel
+Shift + F8 - Add to the selection
+Shift + F9 - Calculate the active worksheet
+Shift + F10 - Popup menu display
+Shift + F11 - New spreadsheet
+Shift + F12 - Save
+Ctrl + F3 - Set name
+Ctrl + F4 - Close
+Ctrl + F5 - XL, size of the restore window
+Ctrl + F6 - Next Workbook Window
+Shift + Ctrl + F6 - Previous Workbook Window
+Ctrl + F7 - Move window
+Ctrl + F8 - Resize Window
+Ctrl + F9 - Minimize the workbook
+Ctrl + F10 - Maximize or Restore Window
+Ctrl + F11 - Inset 4.0 Macro sheet
+Ctrl + F1 - Open File
+Alt + F1 - Insert a graph
+Alt + F2 - Save As
+Alt + F4 - Output
+Alt + F8 - Macro dialog
+Alt + F11 - Visual Basic Editor
+Ctrl + Shift + F3 - Create a name using the names of row and column labels
+Ctrl + Shift + F6 - Previous Window
+Ctrl + Shift + F12 - Printing
+Alt + Shift + F1 - New spreadsheet
+Alt + Shift + F2 - Save
+Alt + = - AutoSum
+Ctrl + `- Toggle value / display of the formula
+Ctrl + Shift + A - Insert the argument names in the formula
+Alt + down arrow - automatic view list
+Alt + '- Format Style Dialog
+Ctrl + Shift + ~ - General Format
+
+</p>
+                <hr>
+                <h3> paragraph</h3>
+                <p>this is paragraph</p>
+             
+                
+                <button onclick="window.print()">প্রিন্ট করুন</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
